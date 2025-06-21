@@ -1,2 +1,4 @@
-# React-Native-study
-리엑트 네이티브 공부하는 레포지토리입니다.
+# Reac-study
+리엑트를 진지하게 공부해보자-!
+---
+[벨로그](https://velog.io/@wisdomkim/series/React)
