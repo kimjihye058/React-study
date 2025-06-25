@@ -1,0 +1,94 @@
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.yesLabel {
+  color: #008000;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.noLabel {
+  color: #e60000;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.totalLabel {
+  margin: 10px 0;
+  color: #555;
+}
+
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.yesButton {
+  background-color: #28a745;
+  color: white;
+}
+
+.yesButton:hover {
+  background-color: #218838;
+}
+
+.noButton {
+  background-color: #dc3545;
+  color: white;
+}
+
+.noButton:hover {
+  background-color: #c82333;
+}
+
+.voteBox {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 400px;
+  background-color: #fefefe;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  background-color: #F3F4F6;
+}
+
+.progressBar {
+  display: flex;
+  height: 15px;
+  border-radius: 9999px;
+  overflow: hidden;
+  margin: 10px 0;
+  background-color: #e5e7eb;
+}
+
+.yesBar {
+  background-color: #008000;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.noBar {
+  background-color: #e60000;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.percentLabel {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
