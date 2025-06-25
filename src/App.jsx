@@ -1,33 +1,13 @@
 import './App.css'
-import Hello from './components/Hello'
-import Counter from './components/Counter'
-import { useState } from 'react'
-import Good from './components/Good'
-
-function User(props){
-  return <p>{props.name}님 환영합니다.</p>
-}
-
-function Button({label, color}) {
-  return <button style={{backgroundColor: color}}> {label} </button>
-}
+import Vote from './components/Vote'
 
 function App() {
 
-  const [isLogin, setIsLogin] = useState(false);
-
-  const [isGood, setIsGood] = useState("좋아요");
-
   return (
     <>
-      <h1>로그인 예제</h1>
-      <button onClick={()=> setIsLogin(!isLogin)}>{isLogin ? "로그아웃" : "로그인"}</button>
-      <Hello isLogin={isLogin}/>
-      <Hello isLogin={isLogin}/>
-      <User name="김지혜"/>
-      <Button label="취소" color="red"/>
-      <h1>좋아요 버튼 만들기</h1>
-      <button onClick={()=> setIsGood(!isGood)}>{isGood ? "좋아요" : "좋아요 취소"}</button>
+      <Vote first="🍗 치킨" second="🍕 피자" question="치킨 vs 피자, 어느 것이 더 좋나요?" />
+      <Vote question="주 4일 근무제에 찬성하시나요?" />
+      <Vote /> {/* 기본 메시지 표시 */}
     </>
   )
 }
