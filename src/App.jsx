@@ -1,12 +1,17 @@
+import { useState } from 'react'
+
 import './App.css'
-import Vote from './components/Vote'
-import Intro from './intro'
+import Timer from './components/Timer'
 
 function App() {
+  const[show, setShow] = useState(true)
 
   return (
     <>
-      <Intro />
+      {show && <Timer/>}
+      <button onClick={() => setShow(!show)}>
+        {show ? "숨기기" : "보이기"}
+      </button>
     </>
   )
 }
